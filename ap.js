@@ -158,6 +158,14 @@ const movielist=[
     name:'The Boss Baby: Christmas Bonus - 2022',
     year:'2022'
   },
+    {
+    genre:'hoạt hình',
+    link:'https://image.tmdb.org/t/p/w300/wq1UG5lPCKpOJgmgpKJszKvoMUe.jpg',
+    image:'https://image.tmdb.org/t/p/w300/iMmMxF6f2OonUrXrHKBLSYAhXly.jpg',
+    episode:'138 min',
+    name:' Kimetsu no Yaiba Mt. Natagumo Arc - 2020',
+    year:'2020'
+  },
   {
     genre:'hoạt hình',
     link:'https://2embed.org/embed/movie?imdb=tt22899102',
