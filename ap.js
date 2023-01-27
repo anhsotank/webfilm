@@ -590,7 +590,7 @@ function render_film(){
           <div class="girl1">
               <header class="navbar">
                   <div class="navbar__logo">
-                      <a href="../index.html">
+                      <a href="./index.html">
                           <img src="https://uploads.turbologo.com/uploads/design/hq_preview_image/4551835/draw_svg20211224-8647-1vc0v11.svg.png" alt="">
                       </a>
                   </div>
