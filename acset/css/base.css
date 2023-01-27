@@ -1,0 +1,22 @@
+:root{
+    --color-White: #fff;
+    --color-black:#333333;
+    }
+    
+    *{
+        box-sizing: inherit;
+    }
+    
+    html{
+        font-size: 62.5%;
+        line-height: 1.6rem;
+        box-sizing: border-box;
+        background-color: rgb(3, 3, 3);
+        
+    }
+    .girl__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
