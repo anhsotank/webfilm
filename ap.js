@@ -158,13 +158,13 @@ const movielist=[
     name:'The Boss Baby: Christmas Bonus - 2022',
     year:'2022'
   },
-    {
+  {
     genre:'hoạt hình',
-    link:'https://image.tmdb.org/t/p/w300/wq1UG5lPCKpOJgmgpKJszKvoMUe.jpg',
-    image:'https://image.tmdb.org/t/p/w300/iMmMxF6f2OonUrXrHKBLSYAhXly.jpg',
+    link:'https://2embed.org/embed/movie?imdb=tt14888874',
+    image:'https://image.tmdb.org/t/p/w300/wq1UG5lPCKpOJgmgpKJszKvoMUe.jpg',
     episode:'138 min',
     name:' Kimetsu no Yaiba Mt. Natagumo Arc - 2020',
-    year:'2020'
+    year:'2022'
   },
   {
     genre:'hoạt hình',
@@ -685,9 +685,9 @@ function render_film(){
                       <div class="film">
                           <iframe id="iframe" src="${movie.link}" width="100%" height="100%" frameborder="0"></iframe>
                           
-                          <div class="wrapper1">
+                          <div class="wrapper">
        
-                              <input type="checkbox" class="tonggle1" id="light-dark1">
+                              <input type="checkbox" class="tonggle" id="light-dark">
                           </div>
                       </div>
       
@@ -743,10 +743,10 @@ function render_film(){
               </div>
           </div>
       <script>
-          var checkbox1=document.getElementById('light-dark1');
+          var checkbox1=document.getElementById('light-dark');
           checkbox1.addEventListener('change',function(){
-              document.querySelector('.girl1').classList.toggle('dark1');
-              if( document.querySelector('.girl1').classList.contains('dark1')){
+              document.querySelector('.girl1').classList.toggle('dark');
+              if( document.querySelector('.girl1').classList.contains('dark')){
                   document.querySelector('.episode-list').style.display ='none';
                   document.querySelector('.film-player').style.display='flex'
               }else{
