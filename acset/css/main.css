@@ -65,15 +65,17 @@
    left: 0px;
    top: 32px;
    width: 650px;
+   max-height: 300px;
+   overflow: scroll;
    border-radius: 3px;
    background-color: #2d2d2de4;
    box-shadow: 0 2px 3px #343333;
    display: none;
 }
-.item_search a{
-    text-decoration: none;
+.item_search{
     font-size: 15px;
     color: #fff;
+    cursor: pointer;
 
 }
 
