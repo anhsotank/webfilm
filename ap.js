@@ -34,7 +34,7 @@ const movielist=[
     genre:'kinh dị',
     link:'https://2embed.org/embed/movie?imdb=tt10298840',
     image:'https://image.tmdb.org/t/p/w300/jXGMJUq9zcrScs02qkQuCtmWwaI.jpg',
-    episode:'1048/??',
+    episode:'108 min',
     name:'Strange World - 2022',
     year:'2022'
   },
@@ -42,7 +42,7 @@ const movielist=[
     genre:'hài hước',
     link:'https://2embed.org/embed/movie?imdb=tt7560830',
     image:'https://image.tmdb.org/t/p/w300/5lnEmN1XozTGHLLfz2Qhpgb6rOB.jpg',
-    episode:'16/25',
+    episode:'87 min',
     name:'Don\'t Fuck in the Woods 2 - 2022 ',
     year:'2022'
   },
@@ -186,7 +186,7 @@ const movielist=[
     genre:'lịch sử',
     link:'https://2embed.org/embed/movie?imdb=tt12530246',
     image:'https://image.tmdb.org/t/p/w300/s9sUK1vAaOcxJfKzNTszrNkPhkH.jpg',
-    episode:'',
+    episode:'100 min',
     name:'Emancipation - 2022',
     year:'2022'
   },
@@ -251,7 +251,7 @@ const movielist=[
     link:'https://2embed.org/embed/movie?imdb=tt24806922',
     image:'https://image.tmdb.org/t/p/w300/6A8VWRvG62zuCXc2jJBA2whU4QX.jpg',
     episode:'89 min',
-    name:'',
+    name:'87 min',
     year:'2022'
   },
   {
@@ -298,7 +298,7 @@ const movielist=[
     genre:'viễn tưởng',
     link:'https://2embed.org/embed/movie?imdb=tt3501632',
     image:'https://image.tmdb.org/t/p/w300/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg',
-    episode:'',
+    episode:'130 min',
     name:'Thor: Ragnarok - 2017 ',
     year:'2017'
   },
@@ -322,7 +322,7 @@ const movielist=[
     genre:'viễn tưởng',
     link:'https://2embed.org/embed/movie?imdb=tt0800080',
     image:'https://image.tmdb.org/t/p/w300/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg',
-    episode:'',
+    episode:'112 min',
     name:'The Incredible Hulk',
     year:'2008'
   },
@@ -330,7 +330,7 @@ const movielist=[
     genre:'viễn tưởng',
     link:'https://2embed.org/embed/movie?imdb=tt5095030',
     image:'https://image.tmdb.org/t/p/w300/eivQmS3wqzqnQWILHLc4FsEfcXP.jpg',
-    episode:'',
+    episode:'130 min',
     name:'ANT-MAN AND THE WASP',
     year:'2018'
   },
@@ -547,30 +547,23 @@ function changepage0(i){
   positionX=positionX+50*(thispage-1);
   thispage=1;
   loaditem();
-  
   document.querySelector('.listpage').style =`transform: translateX(${positionX}px)`
-  
-
 }
 function changepage1(i){
   thispage=i;
   loaditem();
   positionX=positionX+50;
   document.querySelector('.listpage').style =`transform: translateX(${positionX}px)`
-  
-
 }
 function changepage2(i){
   thispage=i;
   loaditem();
   positionX=positionX-50;
   document.querySelector('.listpage').style =`transform: translateX(${positionX}px)`
-  
-
 }
 //film-play-item
 function render_film(){
-  movielist.forEach(function(movie,index,aray){
+  movielist.forEach(function(movie,index){
     
     list[index].addEventListener('click',function(){
       document.head.innerHTML=`
@@ -601,11 +594,7 @@ function render_film(){
                           <i class=' bx bx-search'></i>
                       </div>
                       <ul class="menu_search">
-                          <li class="item_search"><a href="#">one piece</a></li>
-                          <li class="item_search"><a href="#">bạn gái thêu</a></li>
-                          <li class="item_search"><a href="#"> dragon ball hero</a></li>
-                          <li class="item_search"><a href="#">one punch man</a></li>
-                          <li class="item_search"><a href="#">overlor</a></li>
+                        
                       </ul>
       
       
@@ -655,27 +644,27 @@ function render_film(){
                       <div class="intro-film">
                           <div class="list-cate">
                               <div>Thể loại</div>
-                              <div></div>
+                              <div>${movie.genre}</div>
       
                           </div>
                           <div class="status">
                               <div>Trạng Thái</div>
-                              <div></div>
+                              <div>FULL HD</div>
       
                           </div>
                           <div class="score">
                               <div>Điểm </div>
-                              <div></div>
+                              <div>9/10</div>
       
                           </div>
                           <div class="update-time">
                               <div>Phát Hành</div>
-                              <div></div>
+                              <div>${movie.year}</div>
       
                           </div>
                           <div class="duration">
                               <div>Thời Lượng</div>
-                              <div></div>
+                              <div>${movie.episode}</div>
       
                           </div>
                           
@@ -694,48 +683,7 @@ function render_film(){
                       <div class="episode-list">
                           <h4>Danh sách tập</h4>
                           <ul>
-                              <li><a href="#"> 1 </a></li>
-                              <li><a href="#"> 2 </a></li>
-                              <li><a href="#"> 3 </a></li>
-                              <li><a href="#"> 4 </a></li>
-                              <li><a href="#"> 5 </a></li>
-                              <li><a href="#"> 6 </a></li>
-                              <li><a href="#"> 7 </a></li>
-                              <li><a href="#"> 8 </a></li>
-                              <li><a href="#"> 9 </a></li>
-                              <li><a href="#"> 10 </a></li>
-                              <li><a href="#"> 11 </a></li>
-                              <li><a href="#"> 12 </a></li>
-                              <li><a href="#"> 13 </a></li>
-                              <li><a href="#"> 14 </a></li>
-                              <li><a href="#"> 15 </a></li>
-                              <li><a href="#"> 16 </a></li>
-                              <li><a href="#"> 17 </a></li>
-                              <li><a href="#"> 18 </a></li>
-                              <li><a href="#"> 19 </a></li>
-                              <li><a href="#"> 20</a></li>
-                              <li><a href="#"> 21 </a></li>
-                              <li><a href="#"> 22 </a></li>
-                              <li><a href="#"> 23 </a></li>
-                              <li><a href="#"> 24 </a></li>
-                              <li><a href="#"> 25 </a></li>
-                              <li><a href="#"> 26 </a></li>
-                              <li><a href="#"> 27 </a></li>
-                              <li><a href="#"> 28 </a></li>
-                              <li><a href="#"> 29 </a></li>
-                              <li><a href="#"> 30 </a></li>
-                              <li><a href="#"> 31 </a></li>
-                              <li><a href="#"> 32</a></li>
-                              <li><a href="#"> 33 </a></li>
-                              <li><a href="#"> 34 </a></li>
-                              <li><a href="#"> 35 </a></li>
-                              <li><a href="#"> 36 </a></li>
-                              <li><a href="#"> 37 </a></li>
-                              <li><a href="#"> 38 </a></li>
-                              <li><a href="#"> 39 </a></li>
-                              <li><a href="#"> 40 </a></li>
-                              <li><a href="#"> 41 </a></li>
-                              <li><a href="#"> 42 </a></li>
+     
                           </ul>
                       </div>
                   </div>
@@ -804,6 +752,13 @@ window.addEventListener('online',function(event){
   document.getElementById('success').style.display='grid'
 })
 //search
+//search
+movielist.forEach(function(movie,index){
+  let item_search=document.createElement('li');
+  item_search.className='item_search'
+item_search.innerText=movie.name
+document.querySelector('.menu_search').appendChild(item_search)
+})
 function searchfun(){
   let search=document.querySelector('#search');
   document.querySelector('.menu_search').style.display='block';
@@ -816,3 +771,141 @@ function searchfun(){
     else e.style.display="none"
   })
 }
+let list_item_search=document.querySelectorAll('.item_search')
+function render_item_search(){
+  movielist.forEach(function(movie,index){
+    
+    list_item_search[index].addEventListener('click',function(){
+      document.head.innerHTML=`
+      
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+          <link rel="icon" href="https://uploads.turbologo.com/uploads/design/hq_preview_image/4551835/draw_svg20211224-8647-1vc0v11.svg.png">
+      
+          <title>anhsotank.com</title>
+          <link rel="stylesheet" href="acset/css/film-item.css">
+          
+      `
+      document.body.innerHTML=`
+      
+          <div class="girl1">
+              <header class="navbar">
+                  <div class="navbar__logo">
+                      <a href="./index.html">
+                          <img src="https://uploads.turbologo.com/uploads/design/hq_preview_image/4551835/draw_svg20211224-8647-1vc0v11.svg.png" alt="">
+                      </a>
+                  </div>
+                  <div class="navbar__seach">
+                      <input type="text" id="search" onkeyup="searchfun()" onblur="document.querySelector('.menu_search').style.display='none'"
+                      ondblclick="document.querySelector('.menu_search').style.display='none'"  placeholder="Tìm kiếm">
+                      <div class="header_seach">
+                          <i class=' bx bx-search'></i>
+                      </div>
+                      <ul class="menu_search">
+                        
+                      </ul>
+      
+      
+                  </div>
+                  
+                  <ul class="navbar__item">
+                      <li class="navbar__item--icon">
+                          <a href="#">
+                              <i class='header__icon bx bx-menu'></i>
+                              
+                          </a>
+                      </li>
+                      <li class="navbar__item--icon">
+                          <a href="#">
+                              <i class='header__icon bx bx-history'></i>
+                              
+                          </a>
+                      </li>
+                      <li class="navbar__item--icon">
+                          <a href="#">
+                              
+                              <i class='header__icon bx bxs-bookmarks'></i>
+                          </a>
+      
+                      </li>
+                      <li class="navbar__item--icon">
+                          <a href="#">
+                              <i class='header__icon bx bx-horizontal-right'></i>
+                          </a>
+                      </li>
+      
+                  </ul>
+      
+                  
+                  
+              </header>
+              <div class="container">
+                  <div class="header_navbar--link">
+                      Nếu một ngày nào đó bị nhà mạng chặn, hãy truy cập tên miền mới : 
+                      <a href="anhlanhtranh">anhlanhtranh</a>
+                  </div>
+                 <h1 class="heading-movie">${movie.name}</h1>
+                 <div class="review-film">
+                      <div class="film-image">
+                          <img src=" ${movie.image}" alt="">
+                      </div>
+                      <div class="intro-film">
+                          <div class="list-cate">
+                              <div>Thể loại</div>
+                              <div>${movie.genre}</div>
+      
+                          </div>
+                          <div class="status">
+                              <div>Trạng Thái</div>
+                              <div>FULL HD</div>
+      
+                          </div>
+                          <div class="score">
+                              <div>Điểm </div>
+                              <div>9/10</div>
+      
+                          </div>
+                          <div class="update-time">
+                              <div>Phát Hành</div>
+                              <div>${movie.year}</div>
+      
+                          </div>
+                          <div class="duration">
+                              <div>Thời Lượng</div>
+                              <div>${movie.episode}</div>
+      
+                          </div>
+                          
+                      </div>
+                 </div>
+                 <div class="film-player ">
+                      <div class="film">
+                          <iframe id="iframe" src="${movie.link}" width="100%" height="100%" frameborder="0"></iframe>
+                          
+                          <div class="wrapper">
+       
+                              <input type="checkbox" class="tonggle" id="light-dark">
+                          </div>
+                      </div>
+      
+                      <div class="episode-list">
+                          <h4>Danh sách tập</h4>
+                          <ul>
+     
+                          </ul>
+                      </div>
+                  </div>
+                
+              </div>
+          </div>
+      <script  src="./ap.js"> </script>
+          
+      </body>
+      `
+    })
+  })
+
+}
+render_item_search();
