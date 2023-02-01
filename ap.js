@@ -765,7 +765,7 @@ function searchfun(){
   let itemsearch=Array.from(document.querySelectorAll('.item_search'));
   search.value=search.value.toLowerCase();
   itemsearch.forEach(function (e) {
-    let text=e.innerText;
+    let text=e.innerText.toLowerCase();
     if(text.indexOf(search.value)>-1)
     e.style.display="";
     else e.style.display="none"
