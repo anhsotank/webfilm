@@ -1,0 +1,91 @@
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    background-color: rgb(3, 3, 3);
+}
+
+.table{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    background-color:rgba(34, 32, 32, 0.804);
+    -webkit-box-shadow: 27px -3px 146px 21px rgba(45,204,207,0.44);
+-moz-box-shadow: 27px -3px 146px 21px rgba(45,204,207,0.44);
+box-shadow: 27px -3px 146px 21px rgba(45,204,207,0.44);
+    
+}
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.Use{
+    position: relative;
+    width: 220px;
+    height: 40px;
+}
+
+.password{
+    margin-top: 20px;
+    position: relative;
+    width: 220px;
+    height: 40px;
+   
+}
+ label{
+    font-size: 15px;
+    color: rgba(217, 235, 235, 0.799);
+    position: absolute;
+    font-weight: 400;
+    pointer-events: none;
+    left: 5px;
+    top: 13px;
+    
+  
+}
+.table input{
+    color: #25aec1;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1 solid #ffffffc8;
+    background-color:rgba(34, 32, 32, 0.804) ;
+}
+.table input:focus{
+    border: 3px solid rgb(39, 213, 213);
+    box-shadow: red -3px 3px 15px,cyan 3px -3px 15px;
+}
+.table input:focus +label, .table input:valid +label{
+ font-size: 20px;
+top: -6px;
+background-color:rgba(34, 32, 32, 0.804) ;
+left: 10px;
+color: rgb(39, 213, 213);
+
+}
+.login{
+    font-size: 25px;
+    font-weight: 600;
+    color: aliceblue ;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.8982143882943803) 50%, rgba(252,176,69,1) 100%);
+    margin-top: 20px;
+    position: relative;
+    width: 220px;
+    height: 50px;
+    border: 0;
+    
+}
+.login:hover{
+    text-shadow: red -3px 0 3px,cyan 3px 0 3px;
+}
